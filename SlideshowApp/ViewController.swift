@@ -14,14 +14,14 @@ class ViewController:UIViewController {
     @IBOutlet weak var 再生button: UIButton!
     @IBOutlet weak var pictureImageview: UIImageView!
     
-    let imageName = ["image1","image2","image3"]
+    let imageName = ["image1.jpg","image2.jpg","image3.jpg"]
     var changeImgNo = 0
     var timer: Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        pictureImageview.image = UIImage(named:"image1")
+        pictureImageview.image = UIImage(named:"image1.jpg")
     }
 
     @IBAction func 進むbutton(_ sender: Any) {

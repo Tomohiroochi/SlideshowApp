@@ -11,7 +11,7 @@ class OutputViewController: UIViewController {
 
     
     @IBOutlet weak var outputView: UIImageView!
-    let imageName = ["image1","image2","image3"]
+    let imageName = ["image1.jpg","image2.jpg","image3.jpg"]
     var changeImgNo = 0
     
     override func viewDidLoad() {
