@@ -18,9 +18,13 @@
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="rFW-EN-df7">
                                 <rect key="frame" x="-549" y="138" width="1512" height="200"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="4j1-Ll-Rkc"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Uha-hK-yL5" appends="YES" id="hIE-YN-KQ8"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELN-kL-l3v">
                                 <rect key="frame" x="70" y="720" width="51" height="42"/>
@@ -60,9 +64,6 @@
                             <constraint firstItem="HnC-3c-sQW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hxO-eF-Bnq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HnC-3c-sQW" secondAttribute="bottom" constant="100" id="raW-Bp-TTl"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="3D1-FN-0hD" appends="YES" id="sFl-f8-ARK"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="hXx-Au-OSi"/>
                     <connections>
@@ -73,10 +74,10 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="3D1-FN-0hD">
+                <tapGestureRecognizer id="Uha-hK-yL5">
                     <connections>
-                        <action selector="tapAction:" destination="BYZ-38-t0r" id="g3X-bB-hX2"/>
-                        <segue destination="2YL-D8-pKw" kind="show" id="NAH-6P-wUb"/>
+                        <action selector="tapAction:" destination="BYZ-38-t0r" id="Zyz-xg-RE3"/>
+                        <segue destination="2YL-D8-pKw" kind="show" id="aw0-Nh-otn"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

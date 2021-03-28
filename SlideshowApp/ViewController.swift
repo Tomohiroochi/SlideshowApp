@@ -86,16 +86,37 @@ class ViewController:UIViewController {
         pictureImageview.image = UIImage(named: name)
     }
     
+    
     @IBAction func tapAction(_ sender: Any) {
-        }
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let outputViewController:OutputViewController = segue.destination as! OutputViewController
         outputViewController.changeImgNo = changeImgNo
+        
+        if (timer == nil) {
+            timer = nil
+            
+        
+        } else {
+            timer.invalidate()
+            timer = nil
+            再生button.setTitle("再生", for: .normal)
+        }
+        
         }
     
+    
+    
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        
+       
+            
+        }
+        
+        
+        
     }
-    }
+    
         
 
